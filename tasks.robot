@@ -15,6 +15,8 @@ Library             RPA.PDF
 Library             Screenshot
 Library             RPA.Archive
 Library             RPA.Dialogs
+Library             RPA.Robocorp.Vault
+Library             RPA.RobotLogListener
 
 
 *** Variables ***
@@ -92,6 +94,7 @@ Get Orders
     RETURN    ${table}
 
 Close the annoying modal
+    # Mute Run On Failure    Click Element If Visible    css:.btn.btn-dark
     Click Element If Visible    css:.btn.btn-dark
 
 Fill the form
@@ -114,8 +117,7 @@ Store the receipt as a PDF file
         Remove File    ${receipts_path}${/}${order_number}.pdf
     END
     ${alert_found}=    Does Page Contain Element    css:.alert.alert-danger
-    IF    ${alert_found} == ${True}
-        Preview the robot
+    WHILE    ${alert_found} == ${True}
         Submit the order
     END
     Wait Until Element Is Visible
