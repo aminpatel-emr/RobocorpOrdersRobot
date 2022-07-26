@@ -22,10 +22,14 @@ Library             RPA.RobotLogListener
 *** Variables ***
 ${orders_url}           https://robotsparebinindustries.com/#/robot-order
 ${file_url}             https://robotsparebinindustries.com/orders.csv
-${download_path}        ${OUTPUT_DIR}${/}downloads
-${file_path}            ${OUTPUT_DIR}${/}downloads${/}orders.csv
-${receipts_path}        ${OUTPUT_DIR}${/}receipts
-${screenshot_path}      ${OUTPUT_DIR}${/}screenshots
+# ${download_path}    ${OUTPUT_DIR}${/}downloads
+# ${file_path}    ${OUTPUT_DIR}${/}downloads${/}orders.csv
+# ${receipts_path}    ${OUTPUT_DIR}${/}receipts
+# ${screenshot_path}    ${OUTPUT_DIR}${/}screenshots
+${download_path}        ${OUTPUT_DIR}
+${file_path}            ${OUTPUT_DIR}${/}orders.csv
+${receipts_path}        ${OUTPUT_DIR}
+${screenshot_path}      ${OUTPUT_DIR}
 ${retry_max}            3x
 ${retry_interval}       1s
 ${retry_timeout}        1 min
