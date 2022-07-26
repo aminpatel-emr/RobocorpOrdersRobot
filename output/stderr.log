@@ -1,0 +1,1 @@
+UserWarning: mergePage is deprecated and will be removed in PyPDF2 2.0.0. Use merge_page instead. [_page.py:443]
