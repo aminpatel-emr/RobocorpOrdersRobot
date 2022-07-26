@@ -1,9 +1,0 @@
-{"level":30,"time":"2022-06-29T05:13:50.646Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"Listening on 51848"}
-{"level":30,"time":"2022-06-29T05:13:50.724Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-06-29T05:13:50.725Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-06-29T05:13:50.739Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-06-29T05:13:50.739Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-06-29T05:14:33.838Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-06-29T05:14:33.838Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-06-29T05:14:33.859Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-06-29T05:14:33.859Z","pid":12616,"hostname":"INEICP-CORP-L89","msg":"End of node method getBrowserCatalog"}
