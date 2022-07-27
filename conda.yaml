@@ -8,12 +8,15 @@ dependencies:
   # Installation will be faster and more efficient.
   # https://anaconda.org/search
   - python=3.7.5
-  - pip=20.1
   - nodejs=16.14.2
+  # - qt=5.12.9
+  # - pyqt=5.12.3
+  - pip=20.1
 
   - pip:
       # Define pip packages here.
       # https://pypi.org/
+      # - pywebview[qt]==3.6.3
       - rpaframework==14.1.1 # https://rpaframework.org/releasenotes.html
       - robotframework-browser==12.4.0
 
