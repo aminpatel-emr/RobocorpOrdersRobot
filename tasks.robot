@@ -63,7 +63,8 @@ Order robots from RobotSpareBin Industries Inc
         ...    ${pdf}
         Wait Until Keyword Succeeds    ${retry_max}    ${retry_interval}    Go to order another robot
     END
-    Create a ZIP file of the receipts
+    Wait Until Keyword Succeeds    ${retry_max}    ${retry_interval}    Create a ZIP file of the receipts
+    [Teardown]    Close Browser
 
 
 *** Keywords ***
@@ -87,6 +88,7 @@ Open the robot order website
     # ...    download=False
     # Open User Browser    ${orders_url}
     # Open Browser    ${orders_url}    firefox
+    Set Focus To Element    css:.btn.btn-dark
 
 Get Orders
     RPA.HTTP.Download    ${file_url}    target_file=${download_path}    overwrite=True
@@ -152,6 +154,5 @@ Go to order another robot
     Click Element If Visible    order-another
 
 Create a ZIP file of the receipts
-    Close Browser
     ${zip_file_name}=    Set Variable    ${OUTPUT_DIR}/PDFs.zip
     Archive Folder With Zip    ${receipts_path}    ${zip_file_name}
