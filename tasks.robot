@@ -155,4 +155,5 @@ Go to order another robot
 
 Create a ZIP file of the receipts
     ${zip_file_name}=    Set Variable    ${OUTPUT_DIR}/PDFs.zip
-    Archive Folder With Zip    ${receipts_path}    ${zip_file_name}
+    Close All Pdfs
+    Archive Folder With Zip    ${receipts_path}    ${zip_file_name}    True
