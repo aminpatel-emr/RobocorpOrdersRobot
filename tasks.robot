@@ -154,6 +154,9 @@ Go to order another robot
     Click Element If Visible    order-another
 
 Create a ZIP file of the receipts
-    ${zip_file_name}=    Set Variable    ${OUTPUT_DIR}/PDFs.zip
-    Close All Pdfs
+    ${zip_file_name}=    Set Variable    ${download_path}/PDFs.zip
+    ${zip_file_found}=    Does File Exist    ${download_path}/PDFs.zip
+    IF    ${zip_file_found} == ${True}
+        Remove File    ${download_path}/PDFs.zip
+    END
     Archive Folder With Zip    ${receipts_path}    ${zip_file_name}    True
