@@ -7,18 +7,18 @@ dependencies:
   # If available, always prefer the conda version of a package.
   # Installation will be faster and more efficient.
   # https://anaconda.org/search
-  - python=3.7.5
-  - nodejs=16.14.2
-  - qt=5.12.9
-  - pyqt=5.12.3
-  - pip=20.1
+  - python=3.10.5
+  # - nodejs=18.7.0
+  # - qt=5.15.4
+  # - pyqt=5.15.7
+  - pip=22.2.2
 
   - pip:
       # Define pip packages here.
       # https://pypi.org/
-      - pywebview[qt]==3.6.3
-      - rpaframework==15.5.0 # https://rpaframework.org/releasenotes.html
-      - robotframework-browser==12.4.0
+      # - pywebview[qt]==3.6.3
+      - rpaframework==15.8.0 # https://rpaframework.org/releasenotes.html
+      # - robotframework-browser==12.4.0
 
-rccPostInstall:
-  - rfbrowser init
+# rccPostInstall:
+  # - rfbrowser init
