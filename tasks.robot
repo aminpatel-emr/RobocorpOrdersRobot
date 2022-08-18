@@ -136,12 +136,12 @@ Store the receipt as a PDF file
 
 Take a screenshot of the robot
     [Arguments]    ${order_number}
-    ${file_found}=    Does File Exist    ${screenshot_path}${/}${order_number}.jpg
+    ${file_found}=    Does File Exist    ${screenshot_path}${/}${order_number}.png
     IF    ${file_found} == ${True}
-        Remove File    ${screenshot_path}${/}${order_number}.jpg
+        Remove File    ${screenshot_path}${/}${order_number}.png
     END
-    Take Screenshot Without Embedding    ${screenshot_path}${/}${order_number}.jpg
-    RETURN    ${screenshot_path}${/}${order_number}.jpg
+    Screenshot    id:robot-preview-image    ${screenshot_path}${/}${order_number}.png
+    RETURN    ${screenshot_path}${/}${order_number}.png
 
 Embed the robot screenshot to the receipt PDF file
     [Arguments]    ${screenshot}    ${pdf}
