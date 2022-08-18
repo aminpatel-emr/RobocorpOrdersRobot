@@ -18,6 +18,7 @@ dependencies:
       # https://pypi.org/
       # - pywebview[qt]==3.6.3
       - rpaframework==15.8.0 # https://rpaframework.org/releasenotes.html
+      - robotframework==5.0.1
       # - robotframework-browser==12.4.0
 
 # rccPostInstall:
